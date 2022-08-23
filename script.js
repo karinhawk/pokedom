@@ -5,8 +5,8 @@ const getPokemon = (pokemon) => {
     return `<div class="card">
             <div class="card__content">${pokemon.id}</div>
             <img class="card__content card__image" src="${pokemon.sprite}"/>
-            <h1 class="card__content card__heading">${pokemon.name}</h1>
-            <div class="card__content"><p class="card__text">is a ${pokemon.types.join(", ")} type pokemon</p></div>
+            <h1 class="card__content card__heading card__text">${pokemon.name}</h1>
+            <div class="card__content"><p class="card__content card__text">is a ${pokemon.types.join(", ")} type pokemon</p></div>
         </div>`
 }
 
